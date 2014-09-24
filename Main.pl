@@ -127,6 +127,11 @@ print "\t - HTTP $method request to $host\n";
 }
 else
 {
+    =for comment
+
+malicious packet
+
+=cut
 my $code = $packet->{http}->{'http.response.code'};
 print "Potential Bot Detected\n";
 }
